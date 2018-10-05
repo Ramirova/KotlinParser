@@ -1,0 +1,226 @@
+{
+  "kotlinFile": [
+    {
+      "packageHeader": []
+    },
+    {
+      "importList": []
+    },
+    {
+      "topLevelObject": [
+        {
+          "functionDeclaration": [
+            {
+              "type": 61,
+              "text": "fun"
+            },
+            {
+              "identifier": [
+                {
+                  "simpleIdentifier": [
+                    {
+                      "type": 140,
+                      "text": "main"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "functionValueParameters": [
+                {
+                  "type": 9,
+                  "text": "("
+                },
+                {
+                  "functionValueParameter": [
+                    {
+                      "parameter": [
+                        {
+                          "simpleIdentifier": [
+                            {
+                              "type": 140,
+                              "text": "args"
+                            }
+                          ]
+                        },
+                        {
+                          "type": 25,
+                          "text": ":"
+                        },
+                        {
+                          "type": [
+                            {
+                              "typeReference": [
+                                {
+                                  "userType": [
+                                    {
+                                      "simpleUserType": [
+                                        {
+                                          "simpleIdentifier": [
+                                            {
+                                              "type": 140,
+                                              "text": "Array"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "typeArguments": [
+                                            {
+                                              "type": 43,
+                                              "text": "\u003c"
+                                            },
+                                            {
+                                              "typeProjection": [
+                                                {
+                                                  "type": [
+                                                    {
+                                                      "typeReference": [
+                                                        {
+                                                          "userType": [
+                                                            {
+                                                              "simpleUserType": [
+                                                                {
+                                                                  "simpleIdentifier": [
+                                                                    {
+                                                                      "type": 140,
+                                                                      "text": "String"
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": 44,
+                                              "text": "\u003e"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": 10,
+                  "text": ")"
+                }
+              ]
+            },
+            {
+              "functionBody": [
+                {
+                  "block": [
+                    {
+                      "type": 13,
+                      "text": "{"
+                    },
+                    {
+                      "statement": [
+                        {
+                          "expression": [
+                            {
+                              "disjunction": [
+                                {
+                                  "conjunction": [
+                                    {
+                                      "equality": [
+                                        {
+                                          "comparison": [
+                                            {
+                                              "infixOperation": [
+                                                {
+                                                  "elvisExpression": [
+                                                    {
+                                                      "infixFunctionCall": [
+                                                        {
+                                                          "rangeExpression": [
+                                                            {
+                                                              "additiveExpression": [
+                                                                {
+                                                                  "multiplicativeExpression": [
+                                                                    {
+                                                                      "asExpression": [
+                                                                        {
+                                                                          "prefixUnaryExpression": [
+                                                                            {
+                                                                              "postfixUnaryExpression": [
+                                                                                {
+                                                                                  "assignableExpression": [
+                                                                                    {
+                                                                                      "primaryExpression": [
+                                                                                        {
+                                                                                          "jumpExpression": [
+                                                                                            {
+                                                                                              "type": 84,
+                                                                                              "text": "return"
+                                                                                            }
+                                                                                          ]
+                                                                                        }
+                                                                                      ]
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              ]
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": 14,
+                      "text": "}"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": -1,
+      "text": "\u003cEOF\u003e"
+    }
+  ]
+}
