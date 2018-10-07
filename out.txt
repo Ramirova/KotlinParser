@@ -1,90 +1,90 @@
 {
-  "kotlinFile": [
+  "KotlinFile": [
     {
-      "packageHeader": []
+      "PackageHeader": []
     },
     {
-      "importList": []
+      "ImportList": []
     },
     {
-      "topLevelObject": [
+      "TopLevelObject": [
         {
-          "functionDeclaration": [
+          "FunctionDeclaration": [
             {
               "type": 61,
-              "text": "fun"
+              "Value": "fun"
             },
             {
-              "identifier": [
+              "Identifier": [
                 {
-                  "simpleIdentifier": [
+                  "SimpleIdentifier": [
                     {
                       "type": 140,
-                      "text": "main"
+                      "Value": "main"
                     }
                   ]
                 }
               ]
             },
             {
-              "functionValueParameters": [
+              "FunctionValueParameters": [
                 {
                   "type": 9,
-                  "text": "("
+                  "Value": "("
                 },
                 {
-                  "functionValueParameter": [
+                  "FunctionValueParameter": [
                     {
-                      "parameter": [
+                      "Parameter": [
                         {
-                          "simpleIdentifier": [
+                          "SimpleIdentifier": [
                             {
                               "type": 140,
-                              "text": "args"
+                              "Value": "args"
                             }
                           ]
                         },
                         {
                           "type": 25,
-                          "text": ":"
+                          "Value": ":"
                         },
                         {
-                          "type": [
+                          "Type": [
                             {
-                              "typeReference": [
+                              "TypeReference": [
                                 {
-                                  "userType": [
+                                  "UserType": [
                                     {
-                                      "simpleUserType": [
+                                      "SimpleUserType": [
                                         {
-                                          "simpleIdentifier": [
+                                          "SimpleIdentifier": [
                                             {
                                               "type": 140,
-                                              "text": "Array"
+                                              "Value": "Array"
                                             }
                                           ]
                                         },
                                         {
-                                          "typeArguments": [
+                                          "TypeArguments": [
                                             {
                                               "type": 43,
-                                              "text": "\u003c"
+                                              "Value": "\u003c"
                                             },
                                             {
-                                              "typeProjection": [
+                                              "TypeProjection": [
                                                 {
-                                                  "type": [
+                                                  "Type": [
                                                     {
-                                                      "typeReference": [
+                                                      "TypeReference": [
                                                         {
-                                                          "userType": [
+                                                          "UserType": [
                                                             {
-                                                              "simpleUserType": [
+                                                              "SimpleUserType": [
                                                                 {
-                                                                  "simpleIdentifier": [
+                                                                  "SimpleIdentifier": [
                                                                     {
                                                                       "type": 140,
-                                                                      "text": "String"
+                                                                      "Value": "String"
                                                                     }
                                                                   ]
                                                                 }
@@ -100,7 +100,7 @@
                                             },
                                             {
                                               "type": 44,
-                                              "text": "\u003e"
+                                              "Value": "\u003e"
                                             }
                                           ]
                                         }
@@ -118,57 +118,537 @@
                 },
                 {
                   "type": 10,
-                  "text": ")"
+                  "Value": ")"
                 }
               ]
             },
             {
-              "functionBody": [
+              "FunctionBody": [
                 {
-                  "block": [
+                  "Block": [
                     {
                       "type": 13,
-                      "text": "{"
+                      "Value": "{"
                     },
                     {
-                      "statement": [
+                      "type": 5,
+                      "Value": "\n"
+                    },
+                    {
+                      "Statement": [
                         {
-                          "expression": [
+                          "Expression": [
                             {
-                              "disjunction": [
+                              "Disjunction": [
                                 {
-                                  "conjunction": [
+                                  "Conjunction": [
                                     {
-                                      "equality": [
+                                      "Equality": [
                                         {
-                                          "comparison": [
+                                          "Comparison": [
                                             {
-                                              "infixOperation": [
+                                              "InfixOperation": [
                                                 {
-                                                  "elvisExpression": [
+                                                  "ElvisExpression": [
                                                     {
-                                                      "infixFunctionCall": [
+                                                      "InfixFunctionCall": [
                                                         {
-                                                          "rangeExpression": [
+                                                          "RangeExpression": [
                                                             {
-                                                              "additiveExpression": [
+                                                              "AdditiveExpression": [
                                                                 {
-                                                                  "multiplicativeExpression": [
+                                                                  "MultiplicativeExpression": [
                                                                     {
-                                                                      "asExpression": [
+                                                                      "AsExpression": [
                                                                         {
-                                                                          "prefixUnaryExpression": [
+                                                                          "PrefixUnaryExpression": [
                                                                             {
-                                                                              "postfixUnaryExpression": [
+                                                                              "PostfixUnaryExpression": [
                                                                                 {
-                                                                                  "assignableExpression": [
+                                                                                  "AssignableExpression": [
                                                                                     {
-                                                                                      "primaryExpression": [
+                                                                                      "PrimaryExpression": [
                                                                                         {
-                                                                                          "jumpExpression": [
+                                                                                          "ConditionalExpression": [
                                                                                             {
-                                                                                              "type": 84,
-                                                                                              "text": "return"
+                                                                                              "IfExpression": [
+                                                                                                {
+                                                                                                  "type": 74,
+                                                                                                  "Value": "if"
+                                                                                                },
+                                                                                                {
+                                                                                                  "type": 9,
+                                                                                                  "Value": "("
+                                                                                                },
+                                                                                                {
+                                                                                                  "Expression": [
+                                                                                                    {
+                                                                                                      "Disjunction": [
+                                                                                                        {
+                                                                                                          "Conjunction": [
+                                                                                                            {
+                                                                                                              "Equality": [
+                                                                                                                {
+                                                                                                                  "Comparison": [
+                                                                                                                    {
+                                                                                                                      "InfixOperation": [
+                                                                                                                        {
+                                                                                                                          "ElvisExpression": [
+                                                                                                                            {
+                                                                                                                              "InfixFunctionCall": [
+                                                                                                                                {
+                                                                                                                                  "RangeExpression": [
+                                                                                                                                    {
+                                                                                                                                      "AdditiveExpression": [
+                                                                                                                                        {
+                                                                                                                                          "MultiplicativeExpression": [
+                                                                                                                                            {
+                                                                                                                                              "AsExpression": [
+                                                                                                                                                {
+                                                                                                                                                  "PrefixUnaryExpression": [
+                                                                                                                                                    {
+                                                                                                                                                      "PostfixUnaryExpression": [
+                                                                                                                                                        {
+                                                                                                                                                          "DotQualifiedExpression": [
+                                                                                                                                                            {
+                                                                                                                                                              "AssignableExpression": [
+                                                                                                                                                                {
+                                                                                                                                                                  "PrimaryExpression": [
+                                                                                                                                                                    {
+                                                                                                                                                                      "SimpleIdentifier": [
+                                                                                                                                                                        {
+                                                                                                                                                                          "type": 140,
+                                                                                                                                                                          "Value": "args"
+                                                                                                                                                                        }
+                                                                                                                                                                      ]
+                                                                                                                                                                    }
+                                                                                                                                                                  ]
+                                                                                                                                                                }
+                                                                                                                                                              ]
+                                                                                                                                                            },
+                                                                                                                                                            {
+                                                                                                                                                              "MemberAccessOperator": [
+                                                                                                                                                                {
+                                                                                                                                                                  "type": 7,
+                                                                                                                                                                  "Value": "."
+                                                                                                                                                                }
+                                                                                                                                                              ]
+                                                                                                                                                            },
+                                                                                                                                                            {
+                                                                                                                                                              "PostfixUnaryExpression": [
+                                                                                                                                                                {
+                                                                                                                                                                  "AssignableExpression": [
+                                                                                                                                                                    {
+                                                                                                                                                                      "PrimaryExpression": [
+                                                                                                                                                                        {
+                                                                                                                                                                          "SimpleIdentifier": [
+                                                                                                                                                                            {
+                                                                                                                                                                              "type": 140,
+                                                                                                                                                                              "Value": "size"
+                                                                                                                                                                            }
+                                                                                                                                                                          ]
+                                                                                                                                                                        }
+                                                                                                                                                                      ]
+                                                                                                                                                                    }
+                                                                                                                                                                  ]
+                                                                                                                                                                }
+                                                                                                                                                              ]
+                                                                                                                                                            }
+                                                                                                                                                          ]
+                                                                                                                                                        }
+                                                                                                                                                      ]
+                                                                                                                                                    }
+                                                                                                                                                  ]
+                                                                                                                                                }
+                                                                                                                                              ]
+                                                                                                                                            }
+                                                                                                                                          ]
+                                                                                                                                        }
+                                                                                                                                      ]
+                                                                                                                                    }
+                                                                                                                                  ]
+                                                                                                                                }
+                                                                                                                              ]
+                                                                                                                            }
+                                                                                                                          ]
+                                                                                                                        }
+                                                                                                                      ]
+                                                                                                                    }
+                                                                                                                  ]
+                                                                                                                },
+                                                                                                                {
+                                                                                                                  "EqualityOperator": [
+                                                                                                                    {
+                                                                                                                      "type": 50,
+                                                                                                                      "Value": "\u003d\u003d"
+                                                                                                                    }
+                                                                                                                  ]
+                                                                                                                },
+                                                                                                                {
+                                                                                                                  "Comparison": [
+                                                                                                                    {
+                                                                                                                      "InfixOperation": [
+                                                                                                                        {
+                                                                                                                          "ElvisExpression": [
+                                                                                                                            {
+                                                                                                                              "InfixFunctionCall": [
+                                                                                                                                {
+                                                                                                                                  "RangeExpression": [
+                                                                                                                                    {
+                                                                                                                                      "AdditiveExpression": [
+                                                                                                                                        {
+                                                                                                                                          "MultiplicativeExpression": [
+                                                                                                                                            {
+                                                                                                                                              "AsExpression": [
+                                                                                                                                                {
+                                                                                                                                                  "PrefixUnaryExpression": [
+                                                                                                                                                    {
+                                                                                                                                                      "PostfixUnaryExpression": [
+                                                                                                                                                        {
+                                                                                                                                                          "AssignableExpression": [
+                                                                                                                                                            {
+                                                                                                                                                              "PrimaryExpression": [
+                                                                                                                                                                {
+                                                                                                                                                                  "LiteralConstant": [
+                                                                                                                                                                    {
+                                                                                                                                                                      "type": 135,
+                                                                                                                                                                      "Value": "0"
+                                                                                                                                                                    }
+                                                                                                                                                                  ]
+                                                                                                                                                                }
+                                                                                                                                                              ]
+                                                                                                                                                            }
+                                                                                                                                                          ]
+                                                                                                                                                        }
+                                                                                                                                                      ]
+                                                                                                                                                    }
+                                                                                                                                                  ]
+                                                                                                                                                }
+                                                                                                                                              ]
+                                                                                                                                            }
+                                                                                                                                          ]
+                                                                                                                                        }
+                                                                                                                                      ]
+                                                                                                                                    }
+                                                                                                                                  ]
+                                                                                                                                }
+                                                                                                                              ]
+                                                                                                                            }
+                                                                                                                          ]
+                                                                                                                        }
+                                                                                                                      ]
+                                                                                                                    }
+                                                                                                                  ]
+                                                                                                                }
+                                                                                                              ]
+                                                                                                            }
+                                                                                                          ]
+                                                                                                        }
+                                                                                                      ]
+                                                                                                    }
+                                                                                                  ]
+                                                                                                },
+                                                                                                {
+                                                                                                  "type": 10,
+                                                                                                  "Value": ")"
+                                                                                                },
+                                                                                                {
+                                                                                                  "ControlStructureBody": [
+                                                                                                    {
+                                                                                                      "Block": [
+                                                                                                        {
+                                                                                                          "type": 13,
+                                                                                                          "Value": "{"
+                                                                                                        },
+                                                                                                        {
+                                                                                                          "type": 5,
+                                                                                                          "Value": "\n"
+                                                                                                        },
+                                                                                                        {
+                                                                                                          "Statement": [
+                                                                                                            {
+                                                                                                              "Expression": [
+                                                                                                                {
+                                                                                                                  "Disjunction": [
+                                                                                                                    {
+                                                                                                                      "Conjunction": [
+                                                                                                                        {
+                                                                                                                          "Equality": [
+                                                                                                                            {
+                                                                                                                              "Comparison": [
+                                                                                                                                {
+                                                                                                                                  "InfixOperation": [
+                                                                                                                                    {
+                                                                                                                                      "ElvisExpression": [
+                                                                                                                                        {
+                                                                                                                                          "InfixFunctionCall": [
+                                                                                                                                            {
+                                                                                                                                              "RangeExpression": [
+                                                                                                                                                {
+                                                                                                                                                  "AdditiveExpression": [
+                                                                                                                                                    {
+                                                                                                                                                      "MultiplicativeExpression": [
+                                                                                                                                                        {
+                                                                                                                                                          "AsExpression": [
+                                                                                                                                                            {
+                                                                                                                                                              "PrefixUnaryExpression": [
+                                                                                                                                                                {
+                                                                                                                                                                  "PostfixUnaryExpression": [
+                                                                                                                                                                    {
+                                                                                                                                                                      "CallExpression": [
+                                                                                                                                                                        {
+                                                                                                                                                                          "AssignableExpression": [
+                                                                                                                                                                            {
+                                                                                                                                                                              "PrimaryExpression": [
+                                                                                                                                                                                {
+                                                                                                                                                                                  "SimpleIdentifier": [
+                                                                                                                                                                                    {
+                                                                                                                                                                                      "type": 140,
+                                                                                                                                                                                      "Value": "println"
+                                                                                                                                                                                    }
+                                                                                                                                                                                  ]
+                                                                                                                                                                                }
+                                                                                                                                                                              ]
+                                                                                                                                                                            }
+                                                                                                                                                                          ]
+                                                                                                                                                                        },
+                                                                                                                                                                        {
+                                                                                                                                                                          "ValueArguments": [
+                                                                                                                                                                            {
+                                                                                                                                                                              "type": 9,
+                                                                                                                                                                              "Value": "("
+                                                                                                                                                                            },
+                                                                                                                                                                            {
+                                                                                                                                                                              "ValueArgument": [
+                                                                                                                                                                                {
+                                                                                                                                                                                  "Expression": [
+                                                                                                                                                                                    {
+                                                                                                                                                                                      "Disjunction": [
+                                                                                                                                                                                        {
+                                                                                                                                                                                          "Conjunction": [
+                                                                                                                                                                                            {
+                                                                                                                                                                                              "Equality": [
+                                                                                                                                                                                                {
+                                                                                                                                                                                                  "Comparison": [
+                                                                                                                                                                                                    {
+                                                                                                                                                                                                      "InfixOperation": [
+                                                                                                                                                                                                        {
+                                                                                                                                                                                                          "ElvisExpression": [
+                                                                                                                                                                                                            {
+                                                                                                                                                                                                              "InfixFunctionCall": [
+                                                                                                                                                                                                                {
+                                                                                                                                                                                                                  "RangeExpression": [
+                                                                                                                                                                                                                    {
+                                                                                                                                                                                                                      "AdditiveExpression": [
+                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                          "MultiplicativeExpression": [
+                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                              "AsExpression": [
+                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                  "PrefixUnaryExpression": [
+                                                                                                                                                                                                                                    {
+                                                                                                                                                                                                                                      "PostfixUnaryExpression": [
+                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                          "AssignableExpression": [
+                                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                              "PrimaryExpression": [
+                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                  "StringLiteral": [
+                                                                                                                                                                                                                                                    {
+                                                                                                                                                                                                                                                      "LineStringLiteral": [
+                                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                                          "type": 129,
+                                                                                                                                                                                                                                                          "Value": "\""
+                                                                                                                                                                                                                                                        },
+                                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                                          "LineStringContent": [
+                                                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                                              "type": 157,
+                                                                                                                                                                                                                                                              "Value": "Please provide a name as a command-line argument"
+                                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                                          ]
+                                                                                                                                                                                                                                                        },
+                                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                                          "type": 155,
+                                                                                                                                                                                                                                                          "Value": "\""
+                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                      ]
+                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                  ]
+                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                              ]
+                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                          ]
+                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                      ]
+                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                  ]
+                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                              ]
+                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                          ]
+                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                      ]
+                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                  ]
+                                                                                                                                                                                                                }
+                                                                                                                                                                                                              ]
+                                                                                                                                                                                                            }
+                                                                                                                                                                                                          ]
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                      ]
+                                                                                                                                                                                                    }
+                                                                                                                                                                                                  ]
+                                                                                                                                                                                                }
+                                                                                                                                                                                              ]
+                                                                                                                                                                                            }
+                                                                                                                                                                                          ]
+                                                                                                                                                                                        }
+                                                                                                                                                                                      ]
+                                                                                                                                                                                    }
+                                                                                                                                                                                  ]
+                                                                                                                                                                                }
+                                                                                                                                                                              ]
+                                                                                                                                                                            },
+                                                                                                                                                                            {
+                                                                                                                                                                              "type": 10,
+                                                                                                                                                                              "Value": ")"
+                                                                                                                                                                            }
+                                                                                                                                                                          ]
+                                                                                                                                                                        }
+                                                                                                                                                                      ]
+                                                                                                                                                                    }
+                                                                                                                                                                  ]
+                                                                                                                                                                }
+                                                                                                                                                              ]
+                                                                                                                                                            }
+                                                                                                                                                          ]
+                                                                                                                                                        }
+                                                                                                                                                      ]
+                                                                                                                                                    }
+                                                                                                                                                  ]
+                                                                                                                                                }
+                                                                                                                                              ]
+                                                                                                                                            }
+                                                                                                                                          ]
+                                                                                                                                        }
+                                                                                                                                      ]
+                                                                                                                                    }
+                                                                                                                                  ]
+                                                                                                                                }
+                                                                                                                              ]
+                                                                                                                            }
+                                                                                                                          ]
+                                                                                                                        }
+                                                                                                                      ]
+                                                                                                                    }
+                                                                                                                  ]
+                                                                                                                }
+                                                                                                              ]
+                                                                                                            }
+                                                                                                          ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                          "Semi": [
+                                                                                                            {
+                                                                                                              "type": 5,
+                                                                                                              "Value": "\n"
+                                                                                                            }
+                                                                                                          ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                          "Statement": [
+                                                                                                            {
+                                                                                                              "Expression": [
+                                                                                                                {
+                                                                                                                  "Disjunction": [
+                                                                                                                    {
+                                                                                                                      "Conjunction": [
+                                                                                                                        {
+                                                                                                                          "Equality": [
+                                                                                                                            {
+                                                                                                                              "Comparison": [
+                                                                                                                                {
+                                                                                                                                  "InfixOperation": [
+                                                                                                                                    {
+                                                                                                                                      "ElvisExpression": [
+                                                                                                                                        {
+                                                                                                                                          "InfixFunctionCall": [
+                                                                                                                                            {
+                                                                                                                                              "RangeExpression": [
+                                                                                                                                                {
+                                                                                                                                                  "AdditiveExpression": [
+                                                                                                                                                    {
+                                                                                                                                                      "MultiplicativeExpression": [
+                                                                                                                                                        {
+                                                                                                                                                          "AsExpression": [
+                                                                                                                                                            {
+                                                                                                                                                              "PrefixUnaryExpression": [
+                                                                                                                                                                {
+                                                                                                                                                                  "PostfixUnaryExpression": [
+                                                                                                                                                                    {
+                                                                                                                                                                      "AssignableExpression": [
+                                                                                                                                                                        {
+                                                                                                                                                                          "PrimaryExpression": [
+                                                                                                                                                                            {
+                                                                                                                                                                              "JumpExpression": [
+                                                                                                                                                                                {
+                                                                                                                                                                                  "type": 84,
+                                                                                                                                                                                  "Value": "return"
+                                                                                                                                                                                }
+                                                                                                                                                                              ]
+                                                                                                                                                                            }
+                                                                                                                                                                          ]
+                                                                                                                                                                        }
+                                                                                                                                                                      ]
+                                                                                                                                                                    }
+                                                                                                                                                                  ]
+                                                                                                                                                                }
+                                                                                                                                                              ]
+                                                                                                                                                            }
+                                                                                                                                                          ]
+                                                                                                                                                        }
+                                                                                                                                                      ]
+                                                                                                                                                    }
+                                                                                                                                                  ]
+                                                                                                                                                }
+                                                                                                                                              ]
+                                                                                                                                            }
+                                                                                                                                          ]
+                                                                                                                                        }
+                                                                                                                                      ]
+                                                                                                                                    }
+                                                                                                                                  ]
+                                                                                                                                }
+                                                                                                                              ]
+                                                                                                                            }
+                                                                                                                          ]
+                                                                                                                        }
+                                                                                                                      ]
+                                                                                                                    }
+                                                                                                                  ]
+                                                                                                                }
+                                                                                                              ]
+                                                                                                            }
+                                                                                                          ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                          "Semi": [
+                                                                                                            {
+                                                                                                              "type": 5,
+                                                                                                              "Value": "\n"
+                                                                                                            }
+                                                                                                          ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                          "type": 14,
+                                                                                                          "Value": "}"
+                                                                                                        }
+                                                                                                      ]
+                                                                                                    }
+                                                                                                  ]
+                                                                                                }
+                                                                                              ]
                                                                                             }
                                                                                           ]
                                                                                         }
@@ -207,8 +687,388 @@
                       ]
                     },
                     {
+                      "Semi": [
+                        {
+                          "type": 5,
+                          "Value": "\n"
+                        }
+                      ]
+                    },
+                    {
+                      "Statement": [
+                        {
+                          "Expression": [
+                            {
+                              "Disjunction": [
+                                {
+                                  "Conjunction": [
+                                    {
+                                      "Equality": [
+                                        {
+                                          "Comparison": [
+                                            {
+                                              "InfixOperation": [
+                                                {
+                                                  "ElvisExpression": [
+                                                    {
+                                                      "InfixFunctionCall": [
+                                                        {
+                                                          "RangeExpression": [
+                                                            {
+                                                              "AdditiveExpression": [
+                                                                {
+                                                                  "MultiplicativeExpression": [
+                                                                    {
+                                                                      "AsExpression": [
+                                                                        {
+                                                                          "PrefixUnaryExpression": [
+                                                                            {
+                                                                              "PostfixUnaryExpression": [
+                                                                                {
+                                                                                  "CallExpression": [
+                                                                                    {
+                                                                                      "AssignableExpression": [
+                                                                                        {
+                                                                                          "PrimaryExpression": [
+                                                                                            {
+                                                                                              "SimpleIdentifier": [
+                                                                                                {
+                                                                                                  "type": 140,
+                                                                                                  "Value": "println"
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          ]
+                                                                                        }
+                                                                                      ]
+                                                                                    },
+                                                                                    {
+                                                                                      "ValueArguments": [
+                                                                                        {
+                                                                                          "type": 9,
+                                                                                          "Value": "("
+                                                                                        },
+                                                                                        {
+                                                                                          "ValueArgument": [
+                                                                                            {
+                                                                                              "Expression": [
+                                                                                                {
+                                                                                                  "Disjunction": [
+                                                                                                    {
+                                                                                                      "Conjunction": [
+                                                                                                        {
+                                                                                                          "Equality": [
+                                                                                                            {
+                                                                                                              "Comparison": [
+                                                                                                                {
+                                                                                                                  "InfixOperation": [
+                                                                                                                    {
+                                                                                                                      "ElvisExpression": [
+                                                                                                                        {
+                                                                                                                          "InfixFunctionCall": [
+                                                                                                                            {
+                                                                                                                              "RangeExpression": [
+                                                                                                                                {
+                                                                                                                                  "AdditiveExpression": [
+                                                                                                                                    {
+                                                                                                                                      "MultiplicativeExpression": [
+                                                                                                                                        {
+                                                                                                                                          "AsExpression": [
+                                                                                                                                            {
+                                                                                                                                              "PrefixUnaryExpression": [
+                                                                                                                                                {
+                                                                                                                                                  "PostfixUnaryExpression": [
+                                                                                                                                                    {
+                                                                                                                                                      "AssignableExpression": [
+                                                                                                                                                        {
+                                                                                                                                                          "PrimaryExpression": [
+                                                                                                                                                            {
+                                                                                                                                                              "StringLiteral": [
+                                                                                                                                                                {
+                                                                                                                                                                  "LineStringLiteral": [
+                                                                                                                                                                    {
+                                                                                                                                                                      "type": 129,
+                                                                                                                                                                      "Value": "\""
+                                                                                                                                                                    },
+                                                                                                                                                                    {
+                                                                                                                                                                      "LineStringContent": [
+                                                                                                                                                                        {
+                                                                                                                                                                          "type": 157,
+                                                                                                                                                                          "Value": "Hello, "
+                                                                                                                                                                        }
+                                                                                                                                                                      ]
+                                                                                                                                                                    },
+                                                                                                                                                                    {
+                                                                                                                                                                      "LineStringExpression": [
+                                                                                                                                                                        {
+                                                                                                                                                                          "type": 159,
+                                                                                                                                                                          "Value": "${"
+                                                                                                                                                                        },
+                                                                                                                                                                        {
+                                                                                                                                                                          "Expression": [
+                                                                                                                                                                            {
+                                                                                                                                                                              "Disjunction": [
+                                                                                                                                                                                {
+                                                                                                                                                                                  "Conjunction": [
+                                                                                                                                                                                    {
+                                                                                                                                                                                      "Equality": [
+                                                                                                                                                                                        {
+                                                                                                                                                                                          "Comparison": [
+                                                                                                                                                                                            {
+                                                                                                                                                                                              "InfixOperation": [
+                                                                                                                                                                                                {
+                                                                                                                                                                                                  "ElvisExpression": [
+                                                                                                                                                                                                    {
+                                                                                                                                                                                                      "InfixFunctionCall": [
+                                                                                                                                                                                                        {
+                                                                                                                                                                                                          "RangeExpression": [
+                                                                                                                                                                                                            {
+                                                                                                                                                                                                              "AdditiveExpression": [
+                                                                                                                                                                                                                {
+                                                                                                                                                                                                                  "MultiplicativeExpression": [
+                                                                                                                                                                                                                    {
+                                                                                                                                                                                                                      "AsExpression": [
+                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                          "PrefixUnaryExpression": [
+                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                              "PostfixUnaryExpression": [
+                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                  "AssignableExpression": [
+                                                                                                                                                                                                                                    {
+                                                                                                                                                                                                                                      "IndexingExpression": [
+                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                          "Identifier": [
+                                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                              "SimpleIdentifier": [
+                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                  "type": 140,
+                                                                                                                                                                                                                                                  "Value": "args"
+                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                              ]
+                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                          ]
+                                                                                                                                                                                                                                        },
+                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                          "ArrayAccess": [
+                                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                              "type": 11,
+                                                                                                                                                                                                                                              "Value": "["
+                                                                                                                                                                                                                                            },
+                                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                              "Expression": [
+                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                  "Disjunction": [
+                                                                                                                                                                                                                                                    {
+                                                                                                                                                                                                                                                      "Conjunction": [
+                                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                                          "Equality": [
+                                                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                                              "Comparison": [
+                                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                                  "InfixOperation": [
+                                                                                                                                                                                                                                                                    {
+                                                                                                                                                                                                                                                                      "ElvisExpression": [
+                                                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                                                          "InfixFunctionCall": [
+                                                                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                                                              "RangeExpression": [
+                                                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                                                  "AdditiveExpression": [
+                                                                                                                                                                                                                                                                                    {
+                                                                                                                                                                                                                                                                                      "MultiplicativeExpression": [
+                                                                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                                                                          "AsExpression": [
+                                                                                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                                                                              "PrefixUnaryExpression": [
+                                                                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                                                                  "PostfixUnaryExpression": [
+                                                                                                                                                                                                                                                                                                    {
+                                                                                                                                                                                                                                                                                                      "AssignableExpression": [
+                                                                                                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                                                                                                          "PrimaryExpression": [
+                                                                                                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                                                                                              "LiteralConstant": [
+                                                                                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                                                                                  "type": 135,
+                                                                                                                                                                                                                                                                                                                  "Value": "0"
+                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                              ]
+                                                                                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                                                                                          ]
+                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                      ]
+                                                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                                                  ]
+                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                              ]
+                                                                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                                                                          ]
+                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                      ]
+                                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                                  ]
+                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                              ]
+                                                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                                                          ]
+                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                      ]
+                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                  ]
+                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                              ]
+                                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                                          ]
+                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                      ]
+                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                  ]
+                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                              ]
+                                                                                                                                                                                                                                            },
+                                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                              "type": 12,
+                                                                                                                                                                                                                                              "Value": "]"
+                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                          ]
+                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                      ]
+                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                  ]
+                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                              ]
+                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                          ]
+                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                      ]
+                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                  ]
+                                                                                                                                                                                                                }
+                                                                                                                                                                                                              ]
+                                                                                                                                                                                                            }
+                                                                                                                                                                                                          ]
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                      ]
+                                                                                                                                                                                                    }
+                                                                                                                                                                                                  ]
+                                                                                                                                                                                                }
+                                                                                                                                                                                              ]
+                                                                                                                                                                                            }
+                                                                                                                                                                                          ]
+                                                                                                                                                                                        }
+                                                                                                                                                                                      ]
+                                                                                                                                                                                    }
+                                                                                                                                                                                  ]
+                                                                                                                                                                                }
+                                                                                                                                                                              ]
+                                                                                                                                                                            }
+                                                                                                                                                                          ]
+                                                                                                                                                                        },
+                                                                                                                                                                        {
+                                                                                                                                                                          "type": 14,
+                                                                                                                                                                          "Value": "}"
+                                                                                                                                                                        }
+                                                                                                                                                                      ]
+                                                                                                                                                                    },
+                                                                                                                                                                    {
+                                                                                                                                                                      "LineStringContent": [
+                                                                                                                                                                        {
+                                                                                                                                                                          "type": 157,
+                                                                                                                                                                          "Value": "!"
+                                                                                                                                                                        }
+                                                                                                                                                                      ]
+                                                                                                                                                                    },
+                                                                                                                                                                    {
+                                                                                                                                                                      "type": 155,
+                                                                                                                                                                      "Value": "\""
+                                                                                                                                                                    }
+                                                                                                                                                                  ]
+                                                                                                                                                                }
+                                                                                                                                                              ]
+                                                                                                                                                            }
+                                                                                                                                                          ]
+                                                                                                                                                        }
+                                                                                                                                                      ]
+                                                                                                                                                    }
+                                                                                                                                                  ]
+                                                                                                                                                }
+                                                                                                                                              ]
+                                                                                                                                            }
+                                                                                                                                          ]
+                                                                                                                                        }
+                                                                                                                                      ]
+                                                                                                                                    }
+                                                                                                                                  ]
+                                                                                                                                }
+                                                                                                                              ]
+                                                                                                                            }
+                                                                                                                          ]
+                                                                                                                        }
+                                                                                                                      ]
+                                                                                                                    }
+                                                                                                                  ]
+                                                                                                                }
+                                                                                                              ]
+                                                                                                            }
+                                                                                                          ]
+                                                                                                        }
+                                                                                                      ]
+                                                                                                    }
+                                                                                                  ]
+                                                                                                }
+                                                                                              ]
+                                                                                            }
+                                                                                          ]
+                                                                                        },
+                                                                                        {
+                                                                                          "type": 10,
+                                                                                          "Value": ")"
+                                                                                        }
+                                                                                      ]
+                                                                                    }
+                                                                                  ]
+                                                                                }
+                                                                              ]
+                                                                            }
+                                                                          ]
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "Semi": [
+                        {
+                          "type": 5,
+                          "Value": "\n"
+                        }
+                      ]
+                    },
+                    {
                       "type": 14,
-                      "text": "}"
+                      "Value": "}"
                     }
                   ]
                 }
@@ -220,7 +1080,7 @@
     },
     {
       "type": -1,
-      "text": "\u003cEOF\u003e"
+      "Value": "\u003cEOF\u003e"
     }
   ]
 }
