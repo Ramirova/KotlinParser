@@ -20,16 +20,10 @@ import java.util.Map;
 public class JsonHandler {
 
     private static final Gson PRETTY_PRINT_GSON = new GsonBuilder().setPrettyPrinting().create();
-    private static final Gson GSON = new Gson();
 
     public static String toJson(ParseTree tree) {
-        return toJson(tree, true);
+        return PRETTY_PRINT_GSON.toJson(toMap(tree));
     }
-
-    public static String toJson(ParseTree tree, boolean prettyPrint) {
-        return prettyPrint ? PRETTY_PRINT_GSON.toJson(toMap(tree)) : GSON.toJson(toMap(tree));
-    }
-
     public static Map<String, Object> toMap(ParseTree tree) {
         Map<String, Object> map = new LinkedHashMap<>();
         traverse(tree, map);
@@ -41,11 +35,11 @@ public class JsonHandler {
         if (tree instanceof TerminalNodeImpl) {
             Token token = ((TerminalNodeImpl) tree).getSymbol();
             map.put("type", token.getType());
-            map.put("text", token.getText());
+            map.put("Value", token.getText());
         } else {
             List<Map<String, Object>> children = new ArrayList<>();
             String name = tree.getClass().getSimpleName().replaceAll("Context$", "");
-            map.put(Character.toLowerCase(name.charAt(0)) + name.substring(1), children);
+            map.put(name, children);
 
             for (int i = 0; i < tree.getChildCount(); i++) {
                 Map<String, Object> nested = new LinkedHashMap<>();

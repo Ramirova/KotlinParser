@@ -25,20 +25,18 @@ public class Main {
 //                "    }\n" +
 //                "}";
         String sampleCode = "fun main(args: Array<String>) { return }";
-        KotlinLexer KotlinLexer = new KotlinLexer(CharStreams.fromString(sampleCode));
+        KotlinLexer KotlinLexer = new KotlinLexer(CharStreams.fromFileName("in.txt"));
 
         CommonTokenStream commonTokenStream = new CommonTokenStream(KotlinLexer);
         KotlinParser kotlinParser = new KotlinParser(commonTokenStream);
 
         ParseTree tree = kotlinParser.kotlinFile();
-        ParseTreeWalker walker = new ParseTreeWalker();
+//        ParseTreeWalker walker = new ParseTreeWalker();
 
-        ClassCounterListener listener = new ClassCounterListener();
-        walker.walk(listener, tree);
+//        ClassCounterListener listener = new ClassCounterListener();
+//        walker.walk(listener, tree);
 
-        JsonHandler jsonHandler = new JsonHandler();
-
-        writeFile(jsonHandler.toJson(tree));
+        writeFile(JsonHandler.toJson(tree));
     }
     /**
      * Method for reading string from input.txt
