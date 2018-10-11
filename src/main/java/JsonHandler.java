@@ -9,28 +9,20 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by rozaliaamirova on 05/10/2018.
- *
- *
- *
- * Taken from https://stackoverflow.com/questions/49116223/convert-antlr-parse-tree-to-json  !!!!!!!!!!
- *
- */
 public class JsonHandler {
 
     private static final Gson PRETTY_PRINT_GSON = new GsonBuilder().setPrettyPrinting().create();
 
-    public static String toJson(ParseTree tree) {
+    static String toJson(ParseTree tree) {
         return PRETTY_PRINT_GSON.toJson(toMap(tree));
     }
-    public static Map<String, Object> toMap(ParseTree tree) {
+    private static Map<String, Object> toMap(ParseTree tree) {
         Map<String, Object> map = new LinkedHashMap<>();
         traverse(tree, map);
         return map;
     }
 
-    public static void traverse(ParseTree tree, Map<String, Object> map) {
+    private static void traverse(ParseTree tree, Map<String, Object> map) {
 
         if (tree instanceof TerminalNodeImpl) {
             Token token = ((TerminalNodeImpl) tree).getSymbol();
