@@ -3,8 +3,6 @@ import com.google.gson.GsonBuilder;
 import org.antlr.v4.runtime.Token;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.tree.TerminalNodeImpl;
-
-import java.io.File;
 import java.util.*;
 
 public class JsonHandler {
