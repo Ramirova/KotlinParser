@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e218f0ee-da11-4d15-8406-d90053314918" name="Default" comment="Readme almost done, JsonHandler is more specific to our task, KotlinLexer is now built straight from CharacterStream from the file, without readFile method.">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="e218f0ee-da11-4d15-8406-d90053314918" name="Default" comment="Readme changed">
+      <change afterPath="$PROJECT_DIR$/src/main/java/IOUtilities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/KotlinIRParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ThrowingErrorListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KotlinParser.iml" beforeDir="false" afterPath="$PROJECT_DIR$/KotlinParser.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/in.txt" beforeDir="false" afterPath="$PROJECT_DIR$/in.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/JsonHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JsonHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/antlr4/KotlinParser.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/antlr4/KotlinParser.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ClassCounterListener.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/JsonHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JsonHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/antlr4/KotlinParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/antlr4/KotlinParser.class" afterDir="false" />
     </list>
     <ignored path="KotlinParser.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,48 +32,58 @@
     <session id="-1360650221">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.13" value="2" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="2" />
-          <entry key="g4" value="3" />
-          <entry key="iml" value="1" />
-          <entry key="java" value="13" />
-          <entry key="md" value="2" />
-          <entry key="tokens" value="3" />
-          <entry key="txt" value="7" />
+          <entry key="class" value="3" />
+          <entry key="g4" value="6" />
+          <entry key="iml" value="2" />
+          <entry key="java" value="26" />
+          <entry key="md" value="3" />
+          <entry key="tokens" value="6" />
+          <entry key="txt" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="ANTLR v4 grammar file" value="3" />
-          <entry key="CLASS" value="2" />
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="13" />
-          <entry key="Lightning" value="2" />
-          <entry key="Markdown" value="2" />
-          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="ANTLR v4 grammar file" value="6" />
+          <entry key="CLASS" value="3" />
+          <entry key="IDEA_MODULE" value="2" />
+          <entry key="JAVA" value="26" />
+          <entry key="Lightning" value="5" />
+          <entry key="Markdown" value="3" />
+          <entry key="PLAIN_TEXT" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="49" />
-          <entry key="md" value="95" />
-          <entry key="txt" value="199" />
+          <entry key="java" value="482" />
+          <entry key="md" value="96" />
+          <entry key="txt" value="216" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="49" />
-          <entry key="Markdown" value="95" />
-          <entry key="PLAIN_TEXT" value="199" />
+          <entry key="JAVA" value="482" />
+          <entry key="Markdown" value="96" />
+          <entry key="PLAIN_TEXT" value="216" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.checkout.local" value="1" />
+          <entry key="git.branch.create.new" value="1" />
+          <entry key="git.branch.merge" value="1" />
+          <entry key="git.branch.rebase" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -83,10 +94,69 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gen/antlr4/KotlinParserBaseListener.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/KotlinIRParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" column="87" selection-start-line="33" selection-start-column="87" selection-end-line="33" selection-end-column="87" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/IOUtilities.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="46" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="46" />
+              <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/KotlinParser.iml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ThrowingErrorListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="140" lean-forward="true" selection-start-line="10" selection-start-column="140" selection-end-line="10" selection-end-column="140" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/in.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/JsonHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,52 +165,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="619">
-                <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/out.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gen/antlr4/KotlinParserBaseVisitor.java">
+        <entry file="file://$PROJECT_DIR$/gen/antlr4/KotlinParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="12" column="36" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ClassCounterListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="38" column="36" lean-forward="true" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.jar!/org/antlr/v4/runtime/CommonTokenStream.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="-4421">
+              <caret line="12" column="25" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -150,37 +183,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/KotlonWalker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/JsonHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#705#706#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/out.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="1" selection-start-column="1" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -196,6 +198,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="readme" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -208,12 +215,16 @@
         <option value="$PROJECT_DIR$/src/main/java/ClassCounterListener.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Examples.java" />
-        <option value="$PROJECT_DIR$/out.txt" />
-        <option value="$PROJECT_DIR$/in.txt" />
         <option value="$PROJECT_DIR$/gen/antlr4/KotlinParserBaseListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/JsonHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/antlr4/KotlinParser.g4" />
+        <option value="$PROJECT_DIR$/src/main/java/JsonHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ThrowingErrorListener.java" />
+        <option value="$PROJECT_DIR$/in.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/IOUtilities.java" />
+        <option value="$PROJECT_DIR$/src/main/java/KotlinIRParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/out.txt" />
       </list>
     </option>
   </component>
@@ -223,9 +234,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="816" />
-    <option name="width" value="1104" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1920" />
     <option name="height" value="1200" />
   </component>
   <component name="ProjectView">
@@ -233,8 +243,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -274,10 +282,7 @@
             <path>
               <item name="KotlinParser" type="b2602c69:ProjectViewProjectNode" />
               <item name="KotlinParser" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="antlr4" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="KotlinParser" type="b2602c69:ProjectViewProjectNode" />
@@ -288,6 +293,8 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -310,13 +317,12 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538920058710" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539352173185" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/gen" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -553,6 +559,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -574,12 +581,31 @@
       <workItem from="1538819477056" duration="6000" />
       <workItem from="1538819506177" duration="725000" />
       <workItem from="1538820488318" duration="250000" />
-      <workItem from="1538833527813" duration="10113000" />
+      <workItem from="1538833527813" duration="10606000" />
+      <workItem from="1538994840723" duration="1165000" />
+      <workItem from="1539015279534" duration="479000" />
+      <workItem from="1539324963465" duration="246000" />
+      <workItem from="1539348887553" duration="2850000" />
     </task>
+    <task id="LOCAL-00001" summary="Readme almost done, JsonHandler is more specific to our task, KotlinLexer is now built straight from CharacterStream from the file, without readFile method.">
+      <created>1538919974244</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1538919974245</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Readme changed">
+      <created>1538920092333</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1538920092333</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11094000" />
+    <option name="totallyTimeSpent" value="16327000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -591,9 +617,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="516" y="0" width="1404" height="1200" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.45154184" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21086262" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -602,7 +629,7 @@
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32920355" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946752" weight="0.19026549" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946752" visible="true" weight="0.19026549" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3663717" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -612,7 +639,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49840257" weight="0.32920355" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50159746" side_tool="true" weight="0.32920355" />
       <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49946752" weight="0.32920355" />
-      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.3283186" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3283186" />
       <window_info anchor="bottom" id="Log Viewer" order="13" sideWeight="0.64164007" weight="0.32920355" />
       <window_info anchor="bottom" id="SOQL Query" order="14" sideWeight="0.49840257" weight="0.32920355" />
       <window_info anchor="bottom" id="Anonymous Apex" order="15" sideWeight="0.64164007" weight="0.32920355" />
@@ -644,22 +671,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Readme almost done, JsonHandler is more specific to our task, KotlinLexer is now built straight from CharacterStream from the file, without readFile method." />
-    <option name="LAST_COMMIT_MESSAGE" value="Readme almost done, JsonHandler is more specific to our task, KotlinLexer is now built straight from CharacterStream from the file, without readFile method." />
+    <MESSAGE value="Readme changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Readme changed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/JsonHandler.java</url>
-          <line>34</line>
+          <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
+          <line>10</line>
           <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/JsonHandler.java</url>
-          <line>24</line>
-          <properties />
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -691,14 +713,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/KotlinParser.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen/antlr4/KotlinParser.tokens">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3525" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gen/antlr4/KotlinParserVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -710,36 +724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret lean-forward="true" />
-          <folding>
-            <element signature="e#0#1326#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/antlr4/UnicodeClasses.g4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-23873">
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="e#0#23065#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/antlr4/KotlinLexer.g4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3300">
-          <caret line="220" column="9" lean-forward="true" selection-start-line="220" selection-start-column="9" selection-end-line="220" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#15348#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/antlr4/KotlinParser.g4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -750,41 +734,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen/antlr4/KotlinParser.java">
+    <entry file="file://$PROJECT_DIR$/gen/antlr4/KotlinParserBaseListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="25" />
+        <state relative-caret-position="90">
+          <caret line="8" column="46" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gen/antlr4/KotlinParserBaseVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
+        <state relative-caret-position="180">
           <caret line="12" column="36" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gen/antlr4/KotlinParserBaseListener.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.jar!/org/antlr/v4/runtime/CommonTokenStream.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="46" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="46" />
+        <state relative-caret-position="15">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/antlr4/KotlinLexer.g4">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4475">
+          <caret line="220" column="9" lean-forward="true" selection-start-line="220" selection-start-column="9" selection-end-line="220" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ClassCounterListener.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/KotlonWalker.java" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="285">
+            <caret line="19" selection-start-line="19" selection-end-line="19" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/antlr4/KotlinParser.g4">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/antlr4/UnicodeClasses.g4">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24165">
+          <caret line="1613" column="15" selection-start-line="1613" selection-start-column="15" selection-end-line="1613" selection-end-column="15" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#23065#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/in.txt">
+    <entry file="file://$PROJECT_DIR$/gen/antlr4/KotlinParser.tokens">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        <state relative-caret-position="963">
+          <caret line="226" selection-start-line="226" selection-end-line="226" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ClassCounterListener.java">
+    <entry file="file://$PROJECT_DIR$/gen/antlr4/KotlinParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+        <state relative-caret-position="-4421">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -795,57 +808,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/KotlonWalker.java">
+    <entry file="file://$PROJECT_DIR$/KotlinParser.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/in.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/IOUtilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/JsonHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="210">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4-runtime/4.7/antlr4-runtime-4.7.jar!/org/antlr/v4/runtime/CommonTokenStream.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/KotlinIRParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="495">
+          <caret line="33" column="87" selection-start-line="33" selection-start-column="87" selection-end-line="33" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ThrowingErrorListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="140" lean-forward="true" selection-start-line="10" selection-start-column="140" selection-end-line="10" selection-end-column="140" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="38" column="36" lean-forward="true" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/out.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="619">
-            <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">

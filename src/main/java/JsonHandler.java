@@ -4,14 +4,13 @@ import org.antlr.v4.runtime.Token;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.tree.TerminalNodeImpl;
 
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.io.File;
+import java.util.*;
 
 public class JsonHandler {
 
     private static final Gson PRETTY_PRINT_GSON = new GsonBuilder().setPrettyPrinting().create();
+//    private static final HashMap<Integer, String> tokens = readFile();
 
     static String toJson(ParseTree tree) {
         return PRETTY_PRINT_GSON.toJson(toMap(tree));
@@ -40,4 +39,25 @@ public class JsonHandler {
             }
         }
     }
+
+//    /**
+//            * Method for reading string from input.txt
+//     * @return linked list of strings
+//     */
+//    static HashMap<Integer, String> readFile() {
+//        HashMap<Integer, String> result = new HashMap<>();
+//        try {
+//            Scanner in = new Scanner(new File("/Users/nicholas/IdeaProjects/KotlinParser/gen/antlr4/KotlinParser.tokens"));
+//            while (in.hasNextLine()) {
+//                String line = in.nextLine();
+//                int eqPos = line.lastIndexOf("=");
+//                result.put(Integer.parseInt(line.substring(eqPos+1)), line.substring(0, eqPos));
+//            }
+//        } catch (Exception ex) {
+//            ex.printStackTrace();
+//        }
+//        return result;
+//    }
 }
+
+
