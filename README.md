@@ -6,7 +6,14 @@
 This is a syntax analyzer for the Kotlin programming language. It was generated from [Kotlin EBNF Grammar](https://kotlinlang.org/docs/reference/grammar.html) using [Antlr](http://www.antlr.org). The main functionality of the analyzer is the following: it accepts source code written in Kotlin, parces it and generates a programm tree.
 
 #### How to launch.
-*//TODO: write how to launch*
+In IDE: To run our program you need to run `main()` method in Main class from `Main.java` file.
+
+From command line: put in.txt in src folder and write
+ ```sh
+  javac Main.java 
+  java ./Main
+ ```
+ being in src folder.
 
 #### Main components.
 
@@ -51,7 +58,7 @@ As a result we get a map, that fully represents the tree and serialize it ti JSO
 
 #### The Workflow of the program 
 
-`Main.class` assemles all components together and makes them work. Here is the description what it does in particular (can also be seen from the code):
+`KotlinIRParser.class` assemles all components together and makes them work. Here is the description what it does in particular (can also be seen from the code):
 1. Create a `KotlinLexer` object from a `CharStream` of the `in.txt` where the source code is located.
 2. Create a `CommonTokenStream` object from `KotlinLexer` object.
 3. Create a `ParseTree` object using the  `CommonTokenStream` object. This object represents the tree build from the tokenised source code.
