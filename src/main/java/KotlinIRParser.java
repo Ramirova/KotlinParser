@@ -7,12 +7,12 @@ import org.antlr.v4.runtime.tree.ParseTree;
 import java.io.IOException;
 
 public class KotlinIRParser {
-    private String inputFile;
-    private String outputFile;
+    private String inputFileName;
+    private String outputFileName;
 
-    public KotlinIRParser(String inputFile, String outputFile) {
-        this.inputFile = inputFile;
-        this.outputFile = outputFile;
+    public KotlinIRParser(String inputFileName, String outputFileName) {
+        this.inputFileName = inputFileName;
+        this.outputFileName = outputFileName;
     }
 
     /**
@@ -22,7 +22,7 @@ public class KotlinIRParser {
     public void run() throws IOException {
         try {
             //initialing lexer
-            KotlinLexer kotlinLexer = new KotlinLexer(CharStreams.fromFileName(inputFile));
+            KotlinLexer kotlinLexer = new KotlinLexer(CharStreams.fromFileName(inputFileName));
             kotlinLexer.removeErrorListeners();
             kotlinLexer.addErrorListener(ThrowingErrorListener.INSTANCE); //set our custom Error Listener
 
@@ -38,10 +38,10 @@ public class KotlinIRParser {
             ParseTree tree = kotlinParser.kotlinFile();
 
             //parse the tree to JSON and save to the output file
-            IOUtilities.writeFile(JsonHandler.toJson(tree), outputFile);
+            IOUtilities.writeFile(JsonHandler.toJson(tree), outputFileName);
         } catch (ParseCancellationException ex){
             //in case an invalid syntax is encountered, write the explanation message to the output file
-            IOUtilities.writeFile(ex.getMessage().replaceAll("\\\\n", "\n"), outputFile);
+            IOUtilities.writeFile(ex.getMessage().replaceAll("\\\\n", "\n"), outputFileName);
         }
     }
 
