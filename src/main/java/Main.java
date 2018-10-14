@@ -5,13 +5,6 @@ public class Main {
         KotlinIRParser parser = new KotlinIRParser("in.txt", "out.txt");
         parser.run();
     }
-
-
-
-
-
-
-
 }
 
 

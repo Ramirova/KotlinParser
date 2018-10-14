@@ -64,7 +64,6 @@ public class KotlinParserTest {
         CommonTokenStream commonTokenStream = new CommonTokenStream(KotlinLexer);
         KotlinParser kotlinParser = new KotlinParser(commonTokenStream);
 
-        System.out.println(Arrays.toString(kotlinParser.getRuleNames()));
         assertEquals(ruleNames, Arrays.toString(kotlinParser.getRuleNames()));
     }
 

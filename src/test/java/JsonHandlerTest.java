@@ -8,7 +8,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Created by rozaliaamirova on 11/10/2018.
+ * Created by rozaliaamirova on 13/10/2018.
  */
 public class JsonHandlerTest {
     String negativeTest = "wrong result";
