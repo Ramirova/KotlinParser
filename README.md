@@ -2,10 +2,10 @@
 
 > by Rozaliya Amirova and Nikolay Buldakov 
 
-#### Description.
+### Description.
 This is a syntax analyzer for the Kotlin programming language. It was generated from [Kotlin EBNF Grammar](https://kotlinlang.org/docs/reference/grammar.html) using [Antlr](http://www.antlr.org). The main functionality of the analyzer is the following: it accepts source code written in Kotlin, parces it and generates a programm tree.
 
-#### How to launch.
+### How to launch.
 In IDE: To run our program you need to run `main()` method in Main class from `Main.java` file.
 
 From command line: put in.txt in src folder and write
@@ -15,7 +15,7 @@ From command line: put in.txt in src folder and write
  ```
  being in src folder.
 
-#### Main components.
+### Main components.
 
 The project conceptually consists of the following major components:
 * __Kotling lexer grammar__ - grammar from which the `Kotlin lexer` is generated.
@@ -28,7 +28,7 @@ The project conceptually consists of the following major components:
 
 >Below we provide a more detailed description of some of the components.
 
-#### BNF.
+### BNF.
 
 There are two grammars that we use for the project, one is for the lexer, that can be found in `/gen/antlr4/KotlinLexer.g4` and the other is for the parser, in `/gen/antlr4/KotlinParser.g4`. 
 The grammars written in the `EBNF` form for the following reasons:
@@ -40,7 +40,7 @@ The following resources were used for this part of the projet: [Kotlin Keywords 
 
 The grammars themseves can be found in the files mentioned above, They were not included to the document for the sake of a better readability.
 
-#### Antlr4 code generation. 
+### Antlr4 code generation. 
 
 Once the grammar is defined, it is very easy to generate the `Lexer` and the `Parser` for the defined grammar. 
 We used `Intellij Idea` and `Maven` to include the `antlr4` library to the project and utilise it for code generation. We used [step-by-step tutorial how to use Antl4 and Maven for a Java project using Intellij Idea](https://habr.com/post/341138/) to know how to generate the code. As the result the following files were generated:
@@ -51,12 +51,12 @@ We used `Intellij Idea` and `Maven` to include the `antlr4` library to the proje
 * `KotlinLexer.tokens`
 * `KotlinParser.tokens`
 
-#### JSON
+### JSON
 
 To generate JSON, we use the `Gson` library, which allows to serialize java objects to JSON. However, it cannot just serialize a `ParceTree` object, that is why we first traverse the tree and recursively build a `HashMap` object where the keys are the values in the nodes and the associated values are the leaves of those.
 As a result we get a map, that fully represents the tree and serialize it ti JSON.
 
-#### The Workflow of the program 
+### The Workflow of the program 
 
 `KotlinIRParser.class` assembles all the components together and makes them work. Here is the description what it does in particular (can also be seen from the code):
 1. Create a `KotlinLexer` object from a `CharStream` of the `in.txt` where the source code is located.
@@ -65,7 +65,7 @@ As a result we get a map, that fully represents the tree and serialize it ti JSO
 4. Convert the tree to a JSON string, using the `JsonHandler.toJson()` static method.
 5. Write the JSON string to `out.txt`
 
-#### Tests
+### Tests
 
 This project also includes unit tests implemented with the help of Junit4 library.
 You can run them by pressing the green triangle in InteliJIdea.
